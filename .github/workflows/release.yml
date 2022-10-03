@@ -9,7 +9,7 @@ jobs:
   build-pyromod:
     runs-on: ubuntu-latest
     env:
-      MOD_NAME: deathmatch_gamemode
+      MOD_NAME: no-blood-and-gore-mod
       MOD_VERSION: ${{ github.ref_name }}
     steps:
     - uses: actions/checkout@v3
