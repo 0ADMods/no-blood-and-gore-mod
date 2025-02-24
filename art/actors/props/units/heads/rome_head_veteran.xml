@@ -7,6 +7,8 @@
       <mesh>props/dude_head.dae</mesh>
       <textures>
         <texture file="props/head/rome_veteran.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -27,9 +29,5 @@
       <color>250 130 78</color>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="Idle"/>
-    <variant name="Death" frequency="0"/>
-  </group>
-  <material>objectcolor.xml</material>
+  <material>objectcolor_norm_spec.xml</material>
 </actor>

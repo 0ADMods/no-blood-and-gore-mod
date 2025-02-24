@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-  <castshadow/>
+  <castshadow />
   <group>
-    <variant file="quadraped/base_elephant_asian.xml">
+    <variant file="quadraped/base_elephant_asian.xml" frequency="0">
       <mesh>skeletal/elephant_asian_armored_01.dae</mesh>
       <props>
-        <prop actor="units/mauryas/elephantry_archer_d.xml" attachpoint="rider"/>
-        <prop actor="units/mauryas/elephantry_archer_r1.xml" attachpoint="rider1"/>
-        <prop actor="units/mauryas/elephantry_archer_r2.xml" attachpoint="rider2"/>
+        <prop actor="units/mauryas/elephantry_archer_d.xml" attachpoint="rider" />
+        <prop actor="units/mauryas/elephantry_archer_r1.xml" attachpoint="rider1" />
+        <prop actor="units/mauryas/elephantry_archer_r2.xml" attachpoint="rider2" />
       </props>
       <textures>
-        <texture file="skeletal/maur/elephant_archer.png" name="baseTex"/>
-        <texture file="skeletal/maur/elephant_archer_spec.png" name="specTex"/>
-        <texture file="skeletal/maur/elephant_archer_normal.png" name="normTex"/>
+        <texture file="skeletal/maur/elephant_archer.png" name="baseTex" />
+        <texture file="skeletal/maur/elephant_archer_spec.png" name="specTex" />
+        <texture file="skeletal/maur/elephant_archer_normal.png" name="normTex" />
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
-    <variant frequency="0" name="Death"/>
-    <variant name="Run">
+    <variant frequency="100" name="Idle" />
+    <variant name="Run" frequency="0">
       <props>
-        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+        <prop actor="particle/dust_cav.xml" attachpoint="root" />
       </props>
     </variant>
-  </group>
+    </group>
   <material>player_trans_parallax_spec.xml</material>
 </actor>

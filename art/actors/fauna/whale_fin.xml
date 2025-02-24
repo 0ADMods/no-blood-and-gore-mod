@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-  <castshadow/>
-  <float/>
+  <castshadow />
+  <float />
   <group>
     <variant frequency="100" name="Mesh">
       <animations>
-        <animation file="other/whale_fin_idle_a.dae" name="Idle" speed="2"/>
-        <animation file="other/whale_fin_idle_a.dae" name="Idle" speed="3"/>
-        <animation file="other/whale_fin_idle_b.dae" name="Idle" speed="2"/>
-        <animation file="other/whale_fin_idle_b.dae" name="Idle" speed="3"/>
-        <animation file="other/whale_fin_idle_c.dae" name="Idle" speed="2"/>
-        <animation file="other/whale_fin_idle_c.dae" name="Idle" speed="3"/>
-        <animation file="other/whale_fin_idle_d.dae" name="Idle" speed="3"/>
-        <animation file="other/whale_fin_idle_d.dae" name="Idle" speed="2"/>
+        <animation file="other/whale_fin_idle_a.dae" name="Idle" speed="2" />
+        <animation file="other/whale_fin_idle_a.dae" name="Idle" speed="3" />
+        <animation file="other/whale_fin_idle_b.dae" name="Idle" speed="2" />
+        <animation file="other/whale_fin_idle_b.dae" name="Idle" speed="3" />
+        <animation file="other/whale_fin_idle_c.dae" name="Idle" speed="2" />
+        <animation file="other/whale_fin_idle_c.dae" name="Idle" speed="3" />
+        <animation file="other/whale_fin_idle_d.dae" name="Idle" speed="3" />
+        <animation file="other/whale_fin_idle_d.dae" name="Idle" speed="2" />
       </animations>
       <mesh>skeletal/whale_fin.dae</mesh>
     </variant>
@@ -20,13 +20,11 @@
   <group>
     <variant frequency="100" name="texture">
       <textures>
-        <texture file="skeletal/animal_whale_fin.png" name="baseTex"/>
+        <texture file="skeletal/animal_whale_fin.png" name="baseTex" />
+        <texture name="specTex" file="null_white.dds" />
+        <texture file="default_norm.png" name="normTex" />
       </textures>
     </variant>
   </group>
-  <group>
-    <variant frequency="100" name="Idle"/>
-    <variant name="Death" frequency="0"/>
-  </group>
-  <material>basic_spec.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>
