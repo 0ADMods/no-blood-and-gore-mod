@@ -4,7 +4,7 @@
 	"label": "No gore mod",
 	"url": "https://github.com/0ADMods/no-blood-and-gore-mod",
 	"description": "A mod that disables the blood and gore of the game.",
-	"dependencies": ["0ad=0.0.27"],
+	"dependencies": ["0ad=0.27.0"],
 	"ignoreInCompatibilityChecks": true,
 	"type": "Gameplay"
 }
